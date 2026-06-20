@@ -7,84 +7,6 @@
     <meta name="description" content="Las últimas noticias, reviews y análisis de smartphones, laptops, gaming y más.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* ESTILOS ADICIONALES PARA VIDEOS */
-        .video-thumbnail {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            overflow: hidden;
-            border-radius: 12px 12px 0 0;
-        }
-        
-        .video-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-        
-        .video-card:hover .video-thumbnail img {
-            transform: scale(1.1);
-        }
-        
-        .video-thumbnail i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4rem;
-            color: white;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-            z-index: 2;
-            transition: all 0.3s;
-        }
-        
-        .video-card:hover .video-thumbnail i {
-            transform: translate(-50%, -50%) scale(1.2);
-            color: #ff0000;
-        }
-        
-        .video-duration {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.8);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            z-index: 2;
-        }
-        
-        .video-card {
-            cursor: pointer;
-            transition: all 0.3s;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        
-        .video-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        
-        .video-card h4 {
-            padding: 15px 15px 5px;
-            font-size: 1.1rem;
-            color: #1e293b;
-        }
-        
-        .video-views {
-            padding: 0 15px 15px;
-            display: block;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -97,6 +19,7 @@
             
             <ul class="nav-menu">
                 <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li class="dropdown">
                     <a href="#">Reviews <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
@@ -106,7 +29,7 @@
                     </ul>
                 </li>
                 <li><a href="#videos">Videos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="search-box">
@@ -127,7 +50,7 @@
         </div>
     </div>
 
-    <!-- HERO SECTION - IPHONE 17 PRO MAX -->
+    <!-- HERO SECTION - INICIO -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-main">
@@ -166,6 +89,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+        <!-- NOSOTROS -->
+    <section id="nosotros" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p>En <strong>TechFuture</strong> seleccionamos las mejores reviews y análisis para que estés al día con lo último en tecnología.</p>
+            <p>Te traemos información clara, honesta y actualizada para que tomes las mejores decisiones de compra. Porque creemos que la tecnología debe ser accesible y comprensible para todos.</p>
         </div>
     </section>
 
@@ -308,11 +240,11 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE VIDEOS - TODOS TUS VIDEOS -->
+    <!-- SECCIÓN DE VIDEOS -->
     <section id="videos" class="videos-section">
         <h2 class="section-title">🎥 Videos recientes</h2>
         <div class="videos-grid">
-            <!-- Video 1: iPhone 17 Pro Max (español) -->
+            <!-- Video 1: iPhone 17 Pro Max -->
             <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=0hGWHn871qc', '_blank')">
                 <div class="video-thumbnail">
                     <img src="https://img.youtube.com/vi/0hGWHn871qc/0.jpg" alt="iPhone 17 Pro Max Review Español"
@@ -324,7 +256,7 @@
                 <span class="video-views"><i class="fas fa-eye"></i> 193K vistas</span>
             </div>
 
-            <!-- Video 2: Samsung S23 Ultra (español) -->
+            <!-- Video 2: Samsung S23 Ultra -->
             <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=Q08YP66u8i4', '_blank')">
                 <div class="video-thumbnail">
                     <img src="https://img.youtube.com/vi/Q08YP66u8i4/0.jpg" alt="Samsung S23 Ultra Review Español"
@@ -348,7 +280,7 @@
                 <span class="video-views"><i class="fas fa-eye"></i> 105K vistas</span>
             </div>
 
-            <!-- Video 4: MacBook Air M2 (inglés) -->
+            <!-- Video 4: MacBook Air M2 -->
             <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=HeMIZC2rkMo', '_blank')">
                 <div class="video-thumbnail">
                     <img src="https://img.youtube.com/vi/HeMIZC2rkMo/0.jpg" alt="MacBook Air M2 Review"
@@ -358,18 +290,6 @@
                 </div>
                 <h4>M2 MacBook Air Review: More Than a Refresh!</h4>
                 <span class="video-views"><i class="fas fa-eye"></i> 2.3M vistas</span>
-            </div>
-
-            <!-- Video 5: RTX 4090 (inglés) -->
-            <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=THxkY59_xko', '_blank')">
-                <div class="video-thumbnail">
-                    <img src="https://img.youtube.com/vi/THxkY59_xko/0.jpg" alt="RTX 4090 Review"
-                         onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #2563eb, #7c3aed)';">
-                    <i class="fas fa-play-circle"></i>
-                    <span class="video-duration">19:33</span>
-                </div>
-                <h4>Is the fastest GPU ALWAYS the best? RTX 4090 Review</h4>
-                <span class="video-views"><i class="fas fa-eye"></i> 6.7M vistas</span>
             </div>
         </div>
     </section>
@@ -396,6 +316,21 @@
                     <button class="deal-btn">Comprar</button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">📩 Contacto</h2>
+            <p>¿Tienes preguntas o sugerencias? Escríbenos.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('✅ Mensaje enviado correctamente. ¡Gracias por contactarnos!');">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Asunto">
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit" class="cta-button">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
     </section>
 
@@ -435,8 +370,9 @@
             <div class="footer-section">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>

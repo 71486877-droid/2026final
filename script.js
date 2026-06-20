@@ -18,9 +18,11 @@ const searchInput = document.querySelector('.search-box input');
 
 if (searchBtn) {
     searchBtn.addEventListener('click', function() {
-        const searchTerm = searchInput.value;
+        const searchTerm = searchInput.value.trim();
         if (searchTerm) {
             window.open(`https://www.amazon.com/s?k=${encodeURIComponent(searchTerm)}`, '_blank');
+        } else {
+            alert('Por favor, escribe algo para buscar');
         }
     });
 }
@@ -28,12 +30,14 @@ if (searchBtn) {
 if (searchInput) {
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
-            const searchTerm = this.value;
+            const searchTerm = this.value.trim();
             if (searchTerm) {
                 window.open(`https://www.amazon.com/s?k=${encodeURIComponent(searchTerm)}`, '_blank');
+            } else {
+                alert('Por favor, escribe algo para buscar');
             }
         }
     });
 }
 
-console.log('✅ TechFuture cargado');
+console.log('✅ TechFuture cargado - PA3');
