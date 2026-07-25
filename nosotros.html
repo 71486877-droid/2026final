@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture | Nosotros</title>
+    
+    <!-- BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS ANIMATIONS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR con Bootstrap -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: rgba(255,255,255,0.98); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-microchip" style="color: #2563eb;"></i> TechFuture
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- CONTENIDO PRINCIPAL -->
+    <main style="margin-top: 80px; padding: 4rem 0;">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold" style="color: #1e293b;">Sobre Nosotros</h1>
+                    <div class="linea-divisora" style="width: 100px; height: 4px; background: linear-gradient(135deg, #2563eb, #7c3aed); margin: 1rem auto; border-radius: 2px;"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-8">
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #475569;">En <strong>TechFuture</strong> seleccionamos las mejores reviews y análisis para que estés al día con lo último en tecnología.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #64748b;">Te traemos información clara, honesta y actualizada para que tomes las mejores decisiones de compra. Porque creemos que la tecnología debe ser accesible y comprensible para todos.</p>
+                </div>
+            </div>
+            <div class="row mt-5 g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="fas fa-bullseye" style="font-size: 3rem; color: #2563eb;"></i>
+                        <h5 class="mt-3">Misión</h5>
+                        <p class="text-muted">Ayudar a las personas a tomar decisiones informadas sobre tecnología.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="fas fa-eye" style="font-size: 3rem; color: #7c3aed;"></i>
+                        <h5 class="mt-3">Visión</h5>
+                        <p class="text-muted">Ser la fuente de referencia en tecnología para hispanohablantes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: #dc2626;"></i>
+                        <h5 class="mt-3">Valor</h5>
+                        <p class="text-muted">Honestidad, transparencia y pasión por la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 TechFuture. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
